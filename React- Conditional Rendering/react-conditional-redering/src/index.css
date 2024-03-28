@@ -1,0 +1,15 @@
+.welcome-message{
+  font-size: 3em;
+  background-color: #646cff;
+  font-family: monospace;
+  display: flex;
+  border-radius: 5px;
+}
+
+.login-prompt{
+  font-size: 3em;
+  background-color: lightcoral;
+  font-family: monospace;
+  display: flex;
+  border-radius: 5px;
+}

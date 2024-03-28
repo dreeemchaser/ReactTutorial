@@ -1,0 +1,14 @@
+.student{
+  font-family: monospace;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid lightskyblue;
+  text-align: center;
+  width : 150px;
+  margin: 10px;
+  display: inline-block;
+}
+.student p{
+  color: #646cff;
+}
