@@ -7,7 +7,9 @@ function List(){
                                                 {name: "kiwi",calories: 174}]
     fruits.sort(); //Doesn't work with numbers.
     // eslint-disable-next-line react/jsx-key
-    const listItems = fruits.map(fruit => <li key={fruit.name}> {fruit.name} </li>);
+    const listItems = fruits.map(fruit => <li
+                                                                                    key={fruit.name}> {fruit.name}
+                                                                                 </li>);
     return(
       <ol>
           {listItems}
