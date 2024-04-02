@@ -1,0 +1,22 @@
+body{
+  background: lightslategrey;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 12pt;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+input{
+  background: lightcyan;
+  border-radius: 15px;
+  border: 1px solid black;
+  width:40%;
+}

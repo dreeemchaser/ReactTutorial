@@ -2,9 +2,19 @@ import React, {useState, useEffect, useRef} from 'react';
 function Counter() {
 
     const [count, setCount] = useState(0);
-    const increment = () => {setCount(count + 1);}
-    const decrement = () => {setCount(count - 1);}
-    const reset = () => {setCount(0);}
+    const increment = () => {
+
+        // Reacts puts your UPDATER function in a queue (waiting line).
+        setCount(c  => c + 1000000);
+    }
+    // UPDATE ?
+    // REACT -batches together state updates for performance reasons.
+    const decrement = () => {
+        setCount(c => c - 1);
+    }
+    const reset = () => {
+        setCount(0);
+    }
 
 return(
     <>
