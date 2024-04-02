@@ -1,18 +1,34 @@
+import PropTypes from "prop-types";
+function List(props){
 
-function List(){
+    const category = props.category;
+    const itemList = props.items;
 
-    const fruits = [ {name: "apple",calories: 92},
-                                                {name: "banana",calories: 108},
-                                                {name: "pineapple",calories: 192},
-                                                {name: "kiwi",calories: 174}]
-    fruits.sort(); //Doesn't work with numbers.
-    // eslint-disable-next-line react/jsx-key
-    const listItems = fruits.map(fruit => <li key={fruit.name}> {fruit.name} </li>);
-    return(
-      <ol>
-          {listItems}
-      </ol>
-    );
+    const listItems = itemList.map(itemList => <li
+                                            key= {itemList.id} >
+                                                 {itemList.name.toUpperCase()}: &nbsp;
+                                                 {itemList.calories}
+                                                              </li>);
 
+    return (
+        <>
+            <h3 className={"list-category"}> {category} </h3>
+            <ol  className={"list-items"}> {listItems}</ol>
+        </>);
 }
-export default List
+
+List.defaultProps = {
+    category: "Category",
+    items: []
+}
+
+List.propTypes = {
+    category: PropTypes.string,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string.isRequired,
+        calories: PropTypes.number
+    })),
+}
+
+export default List;

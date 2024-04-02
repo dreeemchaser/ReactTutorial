@@ -1,7 +1,9 @@
-// How to initialize a new project:
+How to initialize a new project:
+->  npm create vite@latest
+->  project name:
+->  select framework
+->  select language
+->  run commands given -  cd, install, run dev.
 
-1. npm create vite@latest
-2. project name:
-3. select framework
-4. select language
-5. run commands given -  cd, install, run dev.
+How to re-run a project you're busy with?
+->

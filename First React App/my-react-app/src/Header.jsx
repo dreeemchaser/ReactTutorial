@@ -11,6 +11,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
+                <button> Click Me </button>
                 <hr></hr>
             </header>
         );
