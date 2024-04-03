@@ -1,0 +1,21 @@
+body{
+  background-image: url("./assets/Black-Candel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.clock-container{
+  /* Center Clock in the middle of screen*/
+  display: flex;
+  justify-content: center;
+  min-height: 98vh;
+  align-items: center;
+}
+.clock{
+  color: white;
+  font-size: 8rem;
+  font-family: monospace;
+  text-align: center;
+}
